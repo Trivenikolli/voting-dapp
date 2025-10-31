@@ -1,0 +1,4179 @@
+{
+  "version": 3,
+  "sources": [
+    "../../voting/contract.py"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAoBQ;;AAAa;AAAb;AACA;;AAAmB;AAAnB;AACA;;AAAmB;AAAnB;AACA;;AAAe;AAAf;AACA;;AAAe;AAAf;AACA;;AAAe;AAAf;AACA;;AAAe;AAAf;AACA;AAAoB;AAApB;AACA;AAAoB;AAApB;AACA;AAAoB;AAApB;AACA;;AAAoB;AAApB;AACA;;AAAgB;AAAhB;AACA;;AAAc;AAAd;AACA;;AAAmB;AAAnB;AA9BR;;AAAA;;;AAAA;;;;;;AAAA;;;AAAA;;;;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;AAAA;;;AAAA;;;;;;AAAA;AA0EK;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;;;;;;;;;AAzCA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAEU;AAAA;;AAAA;AAAA;AAAA;AAAP;AACoB;AAAb;AAAA;;;AAAmB;;AAAa;;AAAb;AAAnB;;;;AAAP;AACO;;AAAA;;AAAA;AAAA;;AAAA;AAAP;AACA;;AAAA;;AAAA;AACA;;AAAA;;AAAA;AACA;;AAAA;;AAAA;AACA;;AAAA;;AAAA;AACA;;AAAA;;AAAA;AACA;;AAAA;;AAAA;AACA;;AAAA;;AAAA;AACA;AAAoB;AAApB;AACA;AAAoB;AAApB;AACA;AAAoB;AAApB;AACA;;AAAoB;AAApB;AACA;;AAAgB;;AAAhB;AACA;;AAAA;AAAA;AACA;;AAAmB;AAAnB;AAlBH;AAAA;;;;;AAoBA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAEU;;AAA0B;AAAA;;AAAA;AAAA;AAA1B;AAAP;AACO;;AAA0B;AAAA;;AAAA;AAAA;AAA1B;AAAP;AACO;;;AAAsB;AAAA;;AAAA;AAAA;AAAR;;AAAA;AAAd;;;;AAAP;AAEkC;;AAAtB;AAAA;;AAAA;AAAA;;AACL;AAAP;AACgB;;AAAhB;;AAAA;;AAAA;AAAA;;AAAA;AACA;;;;;;;;;;;;AAUQ;AAFA;AAAA;;AAAA;AAAA;AAAqB;AAArB;AAAA;;AAAA;AAAA;AAjBX;AAAA;AAeW;AAAA;AAAA;AAAA;AAAqB;AAArB;AAAA;AAAA;AAAA;;;;AAFA;AAAA;AAAA;AAAA;AAAqB;AAArB;AAAA;AAAA;AAAA;;;;AAFA;AAAA;AAAA;AAAA;AAAqB;AAArB;AAAA;AAAA;AAAA;;;;;",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "algopy.arc4.ARC4Contract.approval_program",
+      "params": {},
+      "block": "main",
+      "stack_in": [],
+      "op": "intcblock 0 1 2 8"
+    },
+    "7": {
+      "op": "bytecblock \"\" \"option1Votes\" \"option2Votes\" \"option3Votes\" \"option4Votes\" \"noOfOptions\" \"startsAt\" \"endsAt\" \"vote_status\" \"title\" \"description\" \"option1\" \"option2\" \"option3\" \"option4\" \"localState\""
+    },
+    "163": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "165": {
+      "op": "bnz main_after_if_else@2",
+      "stack_out": []
+    },
+    "168": {
+      "op": "bytec 9 // \"title\"",
+      "defined_out": [
+        "\"title\""
+      ],
+      "stack_out": [
+        "\"title\""
+      ]
+    },
+    "170": {
+      "op": "bytec_0 // \"\"",
+      "defined_out": [
+        "\"\"",
+        "\"title\""
+      ],
+      "stack_out": [
+        "\"title\"",
+        "\"\""
+      ]
+    },
+    "171": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "172": {
+      "op": "bytec 10 // \"description\"",
+      "defined_out": [
+        "\"description\""
+      ],
+      "stack_out": [
+        "\"description\""
+      ]
+    },
+    "174": {
+      "op": "bytec_0 // \"\"",
+      "stack_out": [
+        "\"description\"",
+        "\"\""
+      ]
+    },
+    "175": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "176": {
+      "op": "bytec 5 // \"noOfOptions\"",
+      "defined_out": [
+        "\"noOfOptions\""
+      ],
+      "stack_out": [
+        "\"noOfOptions\""
+      ]
+    },
+    "178": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "\"noOfOptions\"",
+        "0"
+      ],
+      "stack_out": [
+        "\"noOfOptions\"",
+        "0"
+      ]
+    },
+    "179": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "180": {
+      "op": "bytec 11 // \"option1\"",
+      "defined_out": [
+        "\"option1\""
+      ],
+      "stack_out": [
+        "\"option1\""
+      ]
+    },
+    "182": {
+      "op": "bytec_0 // \"\"",
+      "stack_out": [
+        "\"option1\"",
+        "\"\""
+      ]
+    },
+    "183": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "184": {
+      "op": "bytec 12 // \"option2\"",
+      "defined_out": [
+        "\"option2\""
+      ],
+      "stack_out": [
+        "\"option2\""
+      ]
+    },
+    "186": {
+      "op": "bytec_0 // \"\"",
+      "stack_out": [
+        "\"option2\"",
+        "\"\""
+      ]
+    },
+    "187": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "188": {
+      "op": "bytec 13 // \"option3\"",
+      "defined_out": [
+        "\"option3\""
+      ],
+      "stack_out": [
+        "\"option3\""
+      ]
+    },
+    "190": {
+      "op": "bytec_0 // \"\"",
+      "stack_out": [
+        "\"option3\"",
+        "\"\""
+      ]
+    },
+    "191": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "192": {
+      "op": "bytec 14 // \"option4\"",
+      "defined_out": [
+        "\"option4\""
+      ],
+      "stack_out": [
+        "\"option4\""
+      ]
+    },
+    "194": {
+      "op": "bytec_0 // \"\"",
+      "stack_out": [
+        "\"option4\"",
+        "\"\""
+      ]
+    },
+    "195": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "196": {
+      "op": "bytec_1 // \"option1Votes\"",
+      "defined_out": [
+        "\"option1Votes\""
+      ],
+      "stack_out": [
+        "\"option1Votes\""
+      ]
+    },
+    "197": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"option1Votes\"",
+        "0"
+      ]
+    },
+    "198": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "199": {
+      "op": "bytec_2 // \"option2Votes\"",
+      "defined_out": [
+        "\"option2Votes\""
+      ],
+      "stack_out": [
+        "\"option2Votes\""
+      ]
+    },
+    "200": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"option2Votes\"",
+        "0"
+      ]
+    },
+    "201": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "202": {
+      "op": "bytec_3 // \"option3Votes\"",
+      "defined_out": [
+        "\"option3Votes\""
+      ],
+      "stack_out": [
+        "\"option3Votes\""
+      ]
+    },
+    "203": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"option3Votes\"",
+        "0"
+      ]
+    },
+    "204": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "205": {
+      "op": "bytec 4 // \"option4Votes\"",
+      "defined_out": [
+        "\"option4Votes\""
+      ],
+      "stack_out": [
+        "\"option4Votes\""
+      ]
+    },
+    "207": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"option4Votes\"",
+        "0"
+      ]
+    },
+    "208": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "209": {
+      "op": "bytec 6 // \"startsAt\"",
+      "defined_out": [
+        "\"startsAt\""
+      ],
+      "stack_out": [
+        "\"startsAt\""
+      ]
+    },
+    "211": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"startsAt\"",
+        "0"
+      ]
+    },
+    "212": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "213": {
+      "op": "bytec 7 // \"endsAt\"",
+      "defined_out": [
+        "\"endsAt\""
+      ],
+      "stack_out": [
+        "\"endsAt\""
+      ]
+    },
+    "215": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"endsAt\"",
+        "0"
+      ]
+    },
+    "216": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "217": {
+      "op": "bytec 8 // \"vote_status\"",
+      "defined_out": [
+        "\"vote_status\""
+      ],
+      "stack_out": [
+        "\"vote_status\""
+      ]
+    },
+    "219": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"vote_status\"",
+        "0"
+      ]
+    },
+    "220": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "221": {
+      "block": "main_after_if_else@2",
+      "stack_in": [],
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "223": {
+      "op": "bz main___algopy_default_create@13",
+      "stack_out": []
+    },
+    "226": {
+      "op": "pushbytes 0x30c6d58a // method \"opt_in()void\"",
+      "defined_out": [
+        "Method(opt_in()void)"
+      ],
+      "stack_out": [
+        "Method(opt_in()void)"
+      ]
+    },
+    "232": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(opt_in()void)",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "Method(opt_in()void)",
+        "tmp%2#0"
+      ]
+    },
+    "235": {
+      "op": "match main_opt_in_route@5",
+      "stack_out": []
+    },
+    "239": {
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "241": {
+      "op": "!",
+      "defined_out": [
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%9#0"
+      ]
+    },
+    "242": {
+      "error": "OnCompletion must be NoOp",
+      "op": "assert // OnCompletion must be NoOp",
+      "stack_out": []
+    },
+    "243": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "tmp%10#0"
+      ]
+    },
+    "245": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "246": {
+      "op": "pushbytess 0x2916b6e9 0x31d5c300 // method \"create_vote(string,string,uint64,string,string,string,string,uint64)void\", method \"vote(uint64)void\"",
+      "defined_out": [
+        "Method(create_vote(string,string,uint64,string,string,string,string,uint64)void)",
+        "Method(vote(uint64)void)"
+      ],
+      "stack_out": [
+        "Method(create_vote(string,string,uint64,string,string,string,string,uint64)void)",
+        "Method(vote(uint64)void)"
+      ]
+    },
+    "258": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(create_vote(string,string,uint64,string,string,string,string,uint64)void)",
+        "Method(vote(uint64)void)",
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "Method(create_vote(string,string,uint64,string,string,string,string,uint64)void)",
+        "Method(vote(uint64)void)",
+        "tmp%12#0"
+      ]
+    },
+    "261": {
+      "op": "match create_vote vote",
+      "stack_out": []
+    },
+    "267": {
+      "op": "err"
+    },
+    "268": {
+      "block": "main_opt_in_route@5",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "270": {
+      "op": "intc_1 // OptIn",
+      "defined_out": [
+        "OptIn",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "OptIn"
+      ]
+    },
+    "271": {
+      "op": "==",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "272": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%4#0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%4#0",
+        "tmp%5#0"
+      ]
+    },
+    "274": {
+      "op": "&&",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "275": {
+      "error": "OnCompletion must be OptIn && can only call when not creating",
+      "op": "assert // OnCompletion must be OptIn && can only call when not creating",
+      "stack_out": []
+    },
+    "276": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "277": {
+      "op": "return",
+      "stack_out": []
+    },
+    "278": {
+      "block": "main___algopy_default_create@13",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%13#0"
+      ],
+      "stack_out": [
+        "tmp%13#0"
+      ]
+    },
+    "280": {
+      "op": "!",
+      "defined_out": [
+        "tmp%14#0"
+      ],
+      "stack_out": [
+        "tmp%14#0"
+      ]
+    },
+    "281": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%14#0",
+        "tmp%15#0"
+      ],
+      "stack_out": [
+        "tmp%14#0",
+        "tmp%15#0"
+      ]
+    },
+    "283": {
+      "op": "!",
+      "defined_out": [
+        "tmp%14#0",
+        "tmp%16#0"
+      ],
+      "stack_out": [
+        "tmp%14#0",
+        "tmp%16#0"
+      ]
+    },
+    "284": {
+      "op": "&&",
+      "defined_out": [
+        "tmp%17#0"
+      ],
+      "stack_out": [
+        "tmp%17#0"
+      ]
+    },
+    "285": {
+      "error": "OnCompletion must be NoOp && can only call when creating",
+      "op": "assert // OnCompletion must be NoOp && can only call when creating",
+      "stack_out": []
+    },
+    "286": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "287": {
+      "op": "return",
+      "stack_out": []
+    },
+    "288": {
+      "subroutine": "smart_contracts.voting.contract.Voting.create_vote[routing]",
+      "params": {},
+      "block": "create_vote",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "291": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "292": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)",
+        "0"
+      ]
+    },
+    "293": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%array_length%0#0"
+      ]
+    },
+    "294": {
+      "op": "intc_2 // 2",
+      "defined_out": [
+        "2",
+        "aggregate%array_length%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%array_length%0#0",
+        "2"
+      ]
+    },
+    "295": {
+      "op": "+",
+      "defined_out": [
+        "add%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0"
+      ]
+    },
+    "296": {
+      "op": "dig 1",
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "298": {
+      "op": "len",
+      "defined_out": [
+        "add%0#0",
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0",
+        "len%0#0"
+      ]
+    },
+    "299": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "eq%0#0"
+      ]
+    },
+    "300": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "301": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0"
+      ]
+    },
+    "304": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "title#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "tmp%2#0"
+      ]
+    },
+    "307": {
+      "op": "dup",
+      "defined_out": [
+        "title#0",
+        "tmp%2#0",
+        "tmp%2#0 (copy)"
+      ],
+      "stack_out": [
+        "title#0",
+        "tmp%2#0",
+        "tmp%2#0 (copy)"
+      ]
+    },
+    "308": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "title#0",
+        "tmp%2#0",
+        "tmp%2#0 (copy)",
+        "0"
+      ]
+    },
+    "309": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%1#0",
+        "title#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "tmp%2#0",
+        "aggregate%array_length%1#0"
+      ]
+    },
+    "310": {
+      "op": "intc_2 // 2",
+      "stack_out": [
+        "title#0",
+        "tmp%2#0",
+        "aggregate%array_length%1#0",
+        "2"
+      ]
+    },
+    "311": {
+      "op": "+",
+      "defined_out": [
+        "add%1#0",
+        "title#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "tmp%2#0",
+        "add%1#0"
+      ]
+    },
+    "312": {
+      "op": "dig 1",
+      "stack_out": [
+        "title#0",
+        "tmp%2#0",
+        "add%1#0",
+        "tmp%2#0 (copy)"
+      ]
+    },
+    "314": {
+      "op": "len",
+      "defined_out": [
+        "add%1#0",
+        "len%1#0",
+        "title#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "tmp%2#0",
+        "add%1#0",
+        "len%1#0"
+      ]
+    },
+    "315": {
+      "op": "==",
+      "defined_out": [
+        "eq%1#0",
+        "title#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "tmp%2#0",
+        "eq%1#0"
+      ]
+    },
+    "316": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": [
+        "title#0",
+        "tmp%2#0"
+      ]
+    },
+    "317": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "description#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0"
+      ]
+    },
+    "320": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "description#0",
+        "title#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "tmp%4#0"
+      ]
+    },
+    "323": {
+      "op": "dup",
+      "defined_out": [
+        "description#0",
+        "title#0",
+        "tmp%4#0",
+        "tmp%4#0 (copy)"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "tmp%4#0",
+        "tmp%4#0 (copy)"
+      ]
+    },
+    "324": {
+      "op": "len",
+      "defined_out": [
+        "description#0",
+        "len%2#0",
+        "title#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "tmp%4#0",
+        "len%2#0"
+      ]
+    },
+    "325": {
+      "op": "intc_3 // 8",
+      "defined_out": [
+        "8",
+        "description#0",
+        "len%2#0",
+        "title#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "tmp%4#0",
+        "len%2#0",
+        "8"
+      ]
+    },
+    "326": {
+      "op": "==",
+      "defined_out": [
+        "description#0",
+        "eq%2#0",
+        "title#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "tmp%4#0",
+        "eq%2#0"
+      ]
+    },
+    "327": {
+      "error": "invalid number of bytes for arc4.uint64",
+      "op": "assert // invalid number of bytes for arc4.uint64",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "tmp%4#0"
+      ]
+    },
+    "328": {
+      "op": "btoi",
+      "defined_out": [
+        "description#0",
+        "noOfOptions#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0"
+      ]
+    },
+    "329": {
+      "op": "dup",
+      "defined_out": [
+        "description#0",
+        "noOfOptions#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "noOfOptions#0"
+      ]
+    },
+    "330": {
+      "op": "txna ApplicationArgs 4",
+      "defined_out": [
+        "description#0",
+        "noOfOptions#0",
+        "title#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "noOfOptions#0",
+        "tmp%6#0"
+      ]
+    },
+    "333": {
+      "op": "dup",
+      "defined_out": [
+        "description#0",
+        "noOfOptions#0",
+        "title#0",
+        "tmp%6#0",
+        "tmp%6#0 (copy)"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "noOfOptions#0",
+        "tmp%6#0",
+        "tmp%6#0 (copy)"
+      ]
+    },
+    "334": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "noOfOptions#0",
+        "tmp%6#0",
+        "tmp%6#0 (copy)",
+        "0"
+      ]
+    },
+    "335": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%2#0",
+        "description#0",
+        "noOfOptions#0",
+        "title#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "noOfOptions#0",
+        "tmp%6#0",
+        "aggregate%array_length%2#0"
+      ]
+    },
+    "336": {
+      "op": "intc_2 // 2",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "noOfOptions#0",
+        "tmp%6#0",
+        "aggregate%array_length%2#0",
+        "2"
+      ]
+    },
+    "337": {
+      "op": "+",
+      "defined_out": [
+        "add%2#0",
+        "description#0",
+        "noOfOptions#0",
+        "title#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "noOfOptions#0",
+        "tmp%6#0",
+        "add%2#0"
+      ]
+    },
+    "338": {
+      "op": "dig 1",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "noOfOptions#0",
+        "tmp%6#0",
+        "add%2#0",
+        "tmp%6#0 (copy)"
+      ]
+    },
+    "340": {
+      "op": "len",
+      "defined_out": [
+        "add%2#0",
+        "description#0",
+        "len%3#0",
+        "noOfOptions#0",
+        "title#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "noOfOptions#0",
+        "tmp%6#0",
+        "add%2#0",
+        "len%3#0"
+      ]
+    },
+    "341": {
+      "op": "==",
+      "defined_out": [
+        "description#0",
+        "eq%3#0",
+        "noOfOptions#0",
+        "title#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "noOfOptions#0",
+        "tmp%6#0",
+        "eq%3#0"
+      ]
+    },
+    "342": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "noOfOptions#0",
+        "tmp%6#0"
+      ]
+    },
+    "343": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "noOfOptions#0",
+        "option1#0"
+      ]
+    },
+    "346": {
+      "op": "swap",
+      "defined_out": [
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "noOfOptions#0"
+      ]
+    },
+    "347": {
+      "op": "txna ApplicationArgs 5",
+      "defined_out": [
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "title#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "noOfOptions#0",
+        "tmp%8#0"
+      ]
+    },
+    "350": {
+      "op": "dup",
+      "defined_out": [
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "title#0",
+        "tmp%8#0",
+        "tmp%8#0 (copy)"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "noOfOptions#0",
+        "tmp%8#0",
+        "tmp%8#0 (copy)"
+      ]
+    },
+    "351": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "noOfOptions#0",
+        "tmp%8#0",
+        "tmp%8#0 (copy)",
+        "0"
+      ]
+    },
+    "352": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%3#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "title#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "noOfOptions#0",
+        "tmp%8#0",
+        "aggregate%array_length%3#0"
+      ]
+    },
+    "353": {
+      "op": "intc_2 // 2",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "noOfOptions#0",
+        "tmp%8#0",
+        "aggregate%array_length%3#0",
+        "2"
+      ]
+    },
+    "354": {
+      "op": "+",
+      "defined_out": [
+        "add%3#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "title#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "noOfOptions#0",
+        "tmp%8#0",
+        "add%3#0"
+      ]
+    },
+    "355": {
+      "op": "dig 1",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "noOfOptions#0",
+        "tmp%8#0",
+        "add%3#0",
+        "tmp%8#0 (copy)"
+      ]
+    },
+    "357": {
+      "op": "len",
+      "defined_out": [
+        "add%3#0",
+        "description#0",
+        "len%4#0",
+        "noOfOptions#0",
+        "option1#0",
+        "title#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "noOfOptions#0",
+        "tmp%8#0",
+        "add%3#0",
+        "len%4#0"
+      ]
+    },
+    "358": {
+      "op": "==",
+      "defined_out": [
+        "description#0",
+        "eq%4#0",
+        "noOfOptions#0",
+        "option1#0",
+        "title#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "noOfOptions#0",
+        "tmp%8#0",
+        "eq%4#0"
+      ]
+    },
+    "359": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "noOfOptions#0",
+        "tmp%8#0"
+      ]
+    },
+    "360": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "noOfOptions#0",
+        "option2#0"
+      ]
+    },
+    "363": {
+      "op": "swap",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "noOfOptions#0"
+      ]
+    },
+    "364": {
+      "op": "txna ApplicationArgs 6",
+      "defined_out": [
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "title#0",
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "noOfOptions#0",
+        "tmp%10#0"
+      ]
+    },
+    "367": {
+      "op": "dup",
+      "defined_out": [
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "title#0",
+        "tmp%10#0",
+        "tmp%10#0 (copy)"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "noOfOptions#0",
+        "tmp%10#0",
+        "tmp%10#0 (copy)"
+      ]
+    },
+    "368": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "noOfOptions#0",
+        "tmp%10#0",
+        "tmp%10#0 (copy)",
+        "0"
+      ]
+    },
+    "369": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%4#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "title#0",
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "noOfOptions#0",
+        "tmp%10#0",
+        "aggregate%array_length%4#0"
+      ]
+    },
+    "370": {
+      "op": "intc_2 // 2",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "noOfOptions#0",
+        "tmp%10#0",
+        "aggregate%array_length%4#0",
+        "2"
+      ]
+    },
+    "371": {
+      "op": "+",
+      "defined_out": [
+        "add%4#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "title#0",
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "noOfOptions#0",
+        "tmp%10#0",
+        "add%4#0"
+      ]
+    },
+    "372": {
+      "op": "dig 1",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "noOfOptions#0",
+        "tmp%10#0",
+        "add%4#0",
+        "tmp%10#0 (copy)"
+      ]
+    },
+    "374": {
+      "op": "len",
+      "defined_out": [
+        "add%4#0",
+        "description#0",
+        "len%5#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "title#0",
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "noOfOptions#0",
+        "tmp%10#0",
+        "add%4#0",
+        "len%5#0"
+      ]
+    },
+    "375": {
+      "op": "==",
+      "defined_out": [
+        "description#0",
+        "eq%5#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "title#0",
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "noOfOptions#0",
+        "tmp%10#0",
+        "eq%5#0"
+      ]
+    },
+    "376": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "noOfOptions#0",
+        "tmp%10#0"
+      ]
+    },
+    "377": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "noOfOptions#0",
+        "option3#0"
+      ]
+    },
+    "380": {
+      "op": "swap",
+      "defined_out": [
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "noOfOptions#0"
+      ]
+    },
+    "381": {
+      "op": "txna ApplicationArgs 7",
+      "defined_out": [
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "title#0",
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "noOfOptions#0",
+        "tmp%12#0"
+      ]
+    },
+    "384": {
+      "op": "dup",
+      "defined_out": [
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "title#0",
+        "tmp%12#0",
+        "tmp%12#0 (copy)"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "noOfOptions#0",
+        "tmp%12#0",
+        "tmp%12#0 (copy)"
+      ]
+    },
+    "385": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "noOfOptions#0",
+        "tmp%12#0",
+        "tmp%12#0 (copy)",
+        "0"
+      ]
+    },
+    "386": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%5#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "title#0",
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "noOfOptions#0",
+        "tmp%12#0",
+        "aggregate%array_length%5#0"
+      ]
+    },
+    "387": {
+      "op": "intc_2 // 2",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "noOfOptions#0",
+        "tmp%12#0",
+        "aggregate%array_length%5#0",
+        "2"
+      ]
+    },
+    "388": {
+      "op": "+",
+      "defined_out": [
+        "add%5#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "title#0",
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "noOfOptions#0",
+        "tmp%12#0",
+        "add%5#0"
+      ]
+    },
+    "389": {
+      "op": "dig 1",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "noOfOptions#0",
+        "tmp%12#0",
+        "add%5#0",
+        "tmp%12#0 (copy)"
+      ]
+    },
+    "391": {
+      "op": "len",
+      "defined_out": [
+        "add%5#0",
+        "description#0",
+        "len%6#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "title#0",
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "noOfOptions#0",
+        "tmp%12#0",
+        "add%5#0",
+        "len%6#0"
+      ]
+    },
+    "392": {
+      "op": "==",
+      "defined_out": [
+        "description#0",
+        "eq%6#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "title#0",
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "noOfOptions#0",
+        "tmp%12#0",
+        "eq%6#0"
+      ]
+    },
+    "393": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "noOfOptions#0",
+        "tmp%12#0"
+      ]
+    },
+    "394": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "noOfOptions#0",
+        "option4#0"
+      ]
+    },
+    "397": {
+      "op": "swap",
+      "defined_out": [
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "noOfOptions#0"
+      ]
+    },
+    "398": {
+      "op": "txna ApplicationArgs 8",
+      "defined_out": [
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0",
+        "tmp%14#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "noOfOptions#0",
+        "tmp%14#0"
+      ]
+    },
+    "401": {
+      "op": "dup",
+      "defined_out": [
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0",
+        "tmp%14#0",
+        "tmp%14#0 (copy)"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "noOfOptions#0",
+        "tmp%14#0",
+        "tmp%14#0 (copy)"
+      ]
+    },
+    "402": {
+      "op": "len",
+      "defined_out": [
+        "description#0",
+        "len%7#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0",
+        "tmp%14#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "noOfOptions#0",
+        "tmp%14#0",
+        "len%7#0"
+      ]
+    },
+    "403": {
+      "op": "intc_3 // 8",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "noOfOptions#0",
+        "tmp%14#0",
+        "len%7#0",
+        "8"
+      ]
+    },
+    "404": {
+      "op": "==",
+      "defined_out": [
+        "description#0",
+        "eq%7#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0",
+        "tmp%14#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "noOfOptions#0",
+        "tmp%14#0",
+        "eq%7#0"
+      ]
+    },
+    "405": {
+      "error": "invalid number of bytes for arc4.uint64",
+      "op": "assert // invalid number of bytes for arc4.uint64",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "noOfOptions#0",
+        "tmp%14#0"
+      ]
+    },
+    "406": {
+      "op": "btoi",
+      "defined_out": [
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "noOfOptions#0",
+        "endsAt#0"
+      ]
+    },
+    "407": {
+      "op": "swap",
+      "defined_out": [
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "noOfOptions#0"
+      ]
+    },
+    "408": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "0"
+      ]
+    },
+    "409": {
+      "op": "bytec 8 // \"vote_status\"",
+      "defined_out": [
+        "\"vote_status\"",
+        "0",
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "0",
+        "\"vote_status\""
+      ]
+    },
+    "411": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "description#0",
+        "endsAt#0",
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "412": {
+      "error": "check self.vote_status exists",
+      "op": "assert // check self.vote_status exists",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "413": {
+      "op": "!",
+      "defined_out": [
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "tmp%0#1"
+      ]
+    },
+    "414": {
+      "error": "Vote already created",
+      "op": "assert // Vote already created",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "noOfOptions#0"
+      ]
+    },
+    "415": {
+      "op": "intc_2 // 2",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "2"
+      ]
+    },
+    "416": {
+      "op": ">=",
+      "defined_out": [
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "tmp%1#1"
+      ]
+    },
+    "417": {
+      "op": "bz create_vote_bool_false@4",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0"
+      ]
+    },
+    "420": {
+      "op": "dig 5",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "noOfOptions#0"
+      ]
+    },
+    "422": {
+      "op": "pushint 4 // 4",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "4"
+      ]
+    },
+    "424": {
+      "op": "<=",
+      "defined_out": [
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0",
+        "tmp%2#1"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "tmp%2#1"
+      ]
+    },
+    "425": {
+      "op": "bz create_vote_bool_false@4",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0"
+      ]
+    },
+    "428": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "and_result%0#0",
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "and_result%0#0"
+      ]
+    },
+    "429": {
+      "error": "Number of options should be between 2 and 4",
+      "block": "create_vote_bool_merge@5",
+      "stack_in": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "and_result%0#0"
+      ],
+      "op": "assert // Number of options should be between 2 and 4",
+      "defined_out": [],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0"
+      ]
+    },
+    "430": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "tmp%3#1"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "tmp%3#1"
+      ]
+    },
+    "432": {
+      "op": "dig 1",
+      "defined_out": [
+        "endsAt#0",
+        "tmp%3#1"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "tmp%3#1",
+        "endsAt#0"
+      ]
+    },
+    "434": {
+      "op": "dup",
+      "defined_out": [
+        "endsAt#0",
+        "endsAt#0 (copy)",
+        "tmp%3#1"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "tmp%3#1",
+        "endsAt#0 (copy)",
+        "endsAt#0 (copy)"
+      ]
+    },
+    "435": {
+      "op": "cover 2",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "tmp%3#1",
+        "endsAt#0 (copy)"
+      ]
+    },
+    "437": {
+      "op": "<",
+      "defined_out": [
+        "endsAt#0",
+        "tmp%4#1"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "tmp%4#1"
+      ]
+    },
+    "438": {
+      "error": "Invalid end time",
+      "op": "assert // Invalid end time",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0"
+      ]
+    },
+    "439": {
+      "op": "bytec 9 // \"title\"",
+      "defined_out": [
+        "\"title\"",
+        "endsAt#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"title\""
+      ]
+    },
+    "441": {
+      "op": "dig 9",
+      "defined_out": [
+        "\"title\"",
+        "endsAt#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"title\"",
+        "title#0"
+      ]
+    },
+    "443": {
+      "op": "app_global_put",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0"
+      ]
+    },
+    "444": {
+      "op": "bytec 10 // \"description\"",
+      "defined_out": [
+        "\"description\"",
+        "endsAt#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"description\""
+      ]
+    },
+    "446": {
+      "op": "dig 8",
+      "defined_out": [
+        "\"description\"",
+        "description#0",
+        "endsAt#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"description\"",
+        "description#0"
+      ]
+    },
+    "448": {
+      "op": "app_global_put",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0"
+      ]
+    },
+    "449": {
+      "op": "bytec 5 // \"noOfOptions\"",
+      "defined_out": [
+        "\"noOfOptions\"",
+        "description#0",
+        "endsAt#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"noOfOptions\""
+      ]
+    },
+    "451": {
+      "op": "dig 7",
+      "defined_out": [
+        "\"noOfOptions\"",
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"noOfOptions\"",
+        "noOfOptions#0"
+      ]
+    },
+    "453": {
+      "op": "app_global_put",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0"
+      ]
+    },
+    "454": {
+      "op": "bytec 11 // \"option1\"",
+      "defined_out": [
+        "\"option1\"",
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"option1\""
+      ]
+    },
+    "456": {
+      "op": "dig 6",
+      "defined_out": [
+        "\"option1\"",
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"option1\"",
+        "option1#0"
+      ]
+    },
+    "458": {
+      "op": "app_global_put",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0"
+      ]
+    },
+    "459": {
+      "op": "bytec 12 // \"option2\"",
+      "defined_out": [
+        "\"option2\"",
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"option2\""
+      ]
+    },
+    "461": {
+      "op": "dig 5",
+      "defined_out": [
+        "\"option2\"",
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"option2\"",
+        "option2#0"
+      ]
+    },
+    "463": {
+      "op": "app_global_put",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0"
+      ]
+    },
+    "464": {
+      "op": "bytec 13 // \"option3\"",
+      "defined_out": [
+        "\"option3\"",
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"option3\""
+      ]
+    },
+    "466": {
+      "op": "dig 4",
+      "defined_out": [
+        "\"option3\"",
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"option3\"",
+        "option3#0"
+      ]
+    },
+    "468": {
+      "op": "app_global_put",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0"
+      ]
+    },
+    "469": {
+      "op": "bytec 14 // \"option4\"",
+      "defined_out": [
+        "\"option4\"",
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"option4\""
+      ]
+    },
+    "471": {
+      "op": "dig 3",
+      "defined_out": [
+        "\"option4\"",
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"option4\"",
+        "option4#0"
+      ]
+    },
+    "473": {
+      "op": "app_global_put",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0"
+      ]
+    },
+    "474": {
+      "op": "bytec_1 // \"option1Votes\"",
+      "defined_out": [
+        "\"option1Votes\"",
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"option1Votes\""
+      ]
+    },
+    "475": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "\"option1Votes\"",
+        "0",
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"option1Votes\"",
+        "0"
+      ]
+    },
+    "476": {
+      "op": "app_global_put",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0"
+      ]
+    },
+    "477": {
+      "op": "bytec_2 // \"option2Votes\"",
+      "defined_out": [
+        "\"option2Votes\"",
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"option2Votes\""
+      ]
+    },
+    "478": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"option2Votes\"",
+        "0"
+      ]
+    },
+    "479": {
+      "op": "app_global_put",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0"
+      ]
+    },
+    "480": {
+      "op": "bytec_3 // \"option3Votes\"",
+      "defined_out": [
+        "\"option3Votes\"",
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"option3Votes\""
+      ]
+    },
+    "481": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"option3Votes\"",
+        "0"
+      ]
+    },
+    "482": {
+      "op": "app_global_put",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0"
+      ]
+    },
+    "483": {
+      "op": "bytec 4 // \"option4Votes\"",
+      "defined_out": [
+        "\"option4Votes\"",
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"option4Votes\""
+      ]
+    },
+    "485": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"option4Votes\"",
+        "0"
+      ]
+    },
+    "486": {
+      "op": "app_global_put",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0"
+      ]
+    },
+    "487": {
+      "op": "bytec 6 // \"startsAt\"",
+      "defined_out": [
+        "\"startsAt\"",
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"startsAt\""
+      ]
+    },
+    "489": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "\"startsAt\"",
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0",
+        "tmp%5#1"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"startsAt\"",
+        "tmp%5#1"
+      ]
+    },
+    "491": {
+      "op": "app_global_put",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0"
+      ]
+    },
+    "492": {
+      "op": "bytec 7 // \"endsAt\"",
+      "defined_out": [
+        "\"endsAt\"",
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "endsAt#0",
+        "\"endsAt\""
+      ]
+    },
+    "494": {
+      "op": "swap",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "\"endsAt\"",
+        "endsAt#0"
+      ]
+    },
+    "495": {
+      "op": "app_global_put",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0"
+      ]
+    },
+    "496": {
+      "op": "bytec 8 // \"vote_status\"",
+      "defined_out": [
+        "\"vote_status\"",
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "\"vote_status\""
+      ]
+    },
+    "498": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "\"vote_status\"",
+        "1",
+        "description#0",
+        "endsAt#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "title#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "\"vote_status\"",
+        "1"
+      ]
+    },
+    "499": {
+      "op": "app_global_put",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0"
+      ]
+    },
+    "500": {
+      "op": "intc_1 // 1",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "1"
+      ]
+    },
+    "501": {
+      "op": "return",
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0"
+      ]
+    },
+    "502": {
+      "block": "create_vote_bool_false@4",
+      "stack_in": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "and_result%0#0"
+      ],
+      "stack_out": [
+        "title#0",
+        "description#0",
+        "noOfOptions#0",
+        "option1#0",
+        "option2#0",
+        "option3#0",
+        "option4#0",
+        "endsAt#0",
+        "and_result%0#0"
+      ]
+    },
+    "503": {
+      "op": "b create_vote_bool_merge@5"
+    },
+    "506": {
+      "subroutine": "smart_contracts.voting.contract.Voting.vote[routing]",
+      "params": {},
+      "block": "vote",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "509": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "510": {
+      "op": "len",
+      "defined_out": [
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "len%0#0"
+      ]
+    },
+    "511": {
+      "op": "intc_3 // 8",
+      "defined_out": [
+        "8",
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "len%0#0",
+        "8"
+      ]
+    },
+    "512": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "eq%0#0"
+      ]
+    },
+    "513": {
+      "error": "invalid number of bytes for arc4.uint64",
+      "op": "assert // invalid number of bytes for arc4.uint64",
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "514": {
+      "op": "btoi",
+      "defined_out": [
+        "option#0"
+      ],
+      "stack_out": [
+        "option#0"
+      ]
+    },
+    "515": {
+      "op": "dup",
+      "defined_out": [
+        "option#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "option#0"
+      ]
+    },
+    "516": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "option#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "option#0",
+        "option#0",
+        "tmp%0#1"
+      ]
+    },
+    "518": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "option#0",
+        "option#0",
+        "tmp%0#1",
+        "0"
+      ]
+    },
+    "519": {
+      "op": "bytec 7 // \"endsAt\"",
+      "defined_out": [
+        "\"endsAt\"",
+        "0",
+        "option#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "option#0",
+        "option#0",
+        "tmp%0#1",
+        "0",
+        "\"endsAt\""
+      ]
+    },
+    "521": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "option#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "option#0",
+        "option#0",
+        "tmp%0#1",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "522": {
+      "error": "check self.endsAt exists",
+      "op": "assert // check self.endsAt exists",
+      "stack_out": [
+        "option#0",
+        "option#0",
+        "tmp%0#1",
+        "maybe_value%0#0"
+      ]
+    },
+    "523": {
+      "op": "<",
+      "defined_out": [
+        "option#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "option#0",
+        "option#0",
+        "tmp%1#1"
+      ]
+    },
+    "524": {
+      "error": "Voting has ended",
+      "op": "assert // Voting has ended",
+      "stack_out": [
+        "option#0",
+        "option#0"
+      ]
+    },
+    "525": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "option#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "option#0",
+        "tmp%2#0"
+      ]
+    },
+    "527": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "option#0",
+        "option#0",
+        "tmp%2#0",
+        "0"
+      ]
+    },
+    "528": {
+      "op": "bytec 6 // \"startsAt\"",
+      "defined_out": [
+        "\"startsAt\"",
+        "0",
+        "option#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "option#0",
+        "tmp%2#0",
+        "0",
+        "\"startsAt\""
+      ]
+    },
+    "530": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "option#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "option#0",
+        "tmp%2#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "531": {
+      "error": "check self.startsAt exists",
+      "op": "assert // check self.startsAt exists",
+      "stack_out": [
+        "option#0",
+        "option#0",
+        "tmp%2#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "532": {
+      "op": ">",
+      "defined_out": [
+        "option#0",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "option#0",
+        "tmp%3#0"
+      ]
+    },
+    "533": {
+      "error": "Voting has not started",
+      "op": "assert // Voting has not started",
+      "stack_out": [
+        "option#0",
+        "option#0"
+      ]
+    },
+    "534": {
+      "op": "bz vote_bool_false@4",
+      "stack_out": [
+        "option#0"
+      ]
+    },
+    "537": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "option#0",
+        "0"
+      ]
+    },
+    "538": {
+      "op": "bytec 5 // \"noOfOptions\"",
+      "defined_out": [
+        "\"noOfOptions\"",
+        "0",
+        "option#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "0",
+        "\"noOfOptions\""
+      ]
+    },
+    "540": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%2#0",
+        "maybe_value%2#0",
+        "option#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "maybe_value%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "541": {
+      "error": "check self.noOfOptions exists",
+      "op": "assert // check self.noOfOptions exists",
+      "stack_out": [
+        "option#0",
+        "maybe_value%2#0"
+      ]
+    },
+    "542": {
+      "op": "dig 1",
+      "stack_out": [
+        "option#0",
+        "maybe_value%2#0",
+        "option#0"
+      ]
+    },
+    "544": {
+      "op": ">=",
+      "defined_out": [
+        "option#0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "tmp%5#0"
+      ]
+    },
+    "545": {
+      "op": "bz vote_bool_false@4",
+      "stack_out": [
+        "option#0"
+      ]
+    },
+    "548": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "and_result%0#0",
+        "option#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "and_result%0#0"
+      ]
+    },
+    "549": {
+      "error": "Invalid option",
+      "block": "vote_bool_merge@5",
+      "stack_in": [
+        "option#0",
+        "and_result%0#0"
+      ],
+      "op": "assert // Invalid option",
+      "defined_out": [],
+      "stack_out": [
+        "option#0"
+      ]
+    },
+    "550": {
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "tmp%6#0"
+      ]
+    },
+    "552": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "tmp%6#0",
+        "0"
+      ]
+    },
+    "553": {
+      "op": "bytec 15 // \"localState\"",
+      "defined_out": [
+        "\"localState\"",
+        "0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "tmp%6#0",
+        "0",
+        "\"localState\""
+      ]
+    },
+    "555": {
+      "op": "app_local_get_ex",
+      "defined_out": [
+        "exist#0",
+        "val#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "val#0",
+        "exist#0"
+      ]
+    },
+    "556": {
+      "op": "bury 1",
+      "stack_out": [
+        "option#0",
+        "exist#0"
+      ]
+    },
+    "558": {
+      "op": "!",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "tmp%7#0"
+      ]
+    },
+    "559": {
+      "error": "Already voted",
+      "op": "assert // Already voted",
+      "stack_out": [
+        "option#0"
+      ]
+    },
+    "560": {
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "tmp%8#0"
+      ]
+    },
+    "562": {
+      "op": "bytec 15 // \"localState\"",
+      "stack_out": [
+        "option#0",
+        "tmp%8#0",
+        "\"localState\""
+      ]
+    },
+    "564": {
+      "op": "dig 2",
+      "defined_out": [
+        "\"localState\"",
+        "option#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "tmp%8#0",
+        "\"localState\"",
+        "option#0"
+      ]
+    },
+    "566": {
+      "op": "dup",
+      "defined_out": [
+        "\"localState\"",
+        "option#0",
+        "option#0 (copy)",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "tmp%8#0",
+        "\"localState\"",
+        "option#0 (copy)",
+        "option#0 (copy)"
+      ]
+    },
+    "567": {
+      "op": "cover 3",
+      "stack_out": [
+        "option#0",
+        "option#0",
+        "tmp%8#0",
+        "\"localState\"",
+        "option#0 (copy)"
+      ]
+    },
+    "569": {
+      "op": "app_local_put",
+      "stack_out": [
+        "option#0",
+        "option#0"
+      ]
+    },
+    "570": {
+      "op": "switch vote_switch_case_default@10 vote_switch_case_0@6 vote_switch_case_1@7 vote_switch_case_2@8 vote_switch_case_3@9",
+      "stack_out": [
+        "option#0"
+      ]
+    },
+    "582": {
+      "block": "vote_switch_case_default@10",
+      "stack_in": [
+        "option#0"
+      ],
+      "op": "err"
+    },
+    "583": {
+      "block": "vote_switch_case_3@9",
+      "stack_in": [
+        "option#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "option#0",
+        "0"
+      ]
+    },
+    "584": {
+      "op": "bytec 4 // \"option4Votes\"",
+      "defined_out": [
+        "\"option4Votes\"",
+        "0"
+      ],
+      "stack_out": [
+        "option#0",
+        "0",
+        "\"option4Votes\""
+      ]
+    },
+    "586": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%7#0",
+        "maybe_value%7#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "maybe_value%7#0",
+        "maybe_exists%7#0"
+      ]
+    },
+    "587": {
+      "error": "check self.option4Votes exists",
+      "op": "assert // check self.option4Votes exists",
+      "stack_out": [
+        "option#0",
+        "maybe_value%7#0"
+      ]
+    },
+    "588": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "maybe_value%7#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "maybe_value%7#0",
+        "1"
+      ]
+    },
+    "589": {
+      "op": "+",
+      "defined_out": [
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "tmp%12#0"
+      ]
+    },
+    "590": {
+      "op": "bytec 4 // \"option4Votes\"",
+      "stack_out": [
+        "option#0",
+        "tmp%12#0",
+        "\"option4Votes\""
+      ]
+    },
+    "592": {
+      "op": "swap",
+      "stack_out": [
+        "option#0",
+        "\"option4Votes\"",
+        "tmp%12#0"
+      ]
+    },
+    "593": {
+      "op": "app_global_put",
+      "stack_out": [
+        "option#0"
+      ]
+    },
+    "594": {
+      "block": "vote_switch_case_next@11",
+      "stack_in": [
+        "option#0"
+      ],
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "option#0",
+        "1"
+      ]
+    },
+    "595": {
+      "op": "return",
+      "stack_out": [
+        "option#0"
+      ]
+    },
+    "596": {
+      "block": "vote_switch_case_2@8",
+      "stack_in": [
+        "option#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "option#0",
+        "0"
+      ]
+    },
+    "597": {
+      "op": "bytec_3 // \"option3Votes\"",
+      "defined_out": [
+        "\"option3Votes\"",
+        "0"
+      ],
+      "stack_out": [
+        "option#0",
+        "0",
+        "\"option3Votes\""
+      ]
+    },
+    "598": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%6#0",
+        "maybe_value%6#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "maybe_value%6#0",
+        "maybe_exists%6#0"
+      ]
+    },
+    "599": {
+      "error": "check self.option3Votes exists",
+      "op": "assert // check self.option3Votes exists",
+      "stack_out": [
+        "option#0",
+        "maybe_value%6#0"
+      ]
+    },
+    "600": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "maybe_value%6#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "maybe_value%6#0",
+        "1"
+      ]
+    },
+    "601": {
+      "op": "+",
+      "defined_out": [
+        "tmp%11#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "tmp%11#0"
+      ]
+    },
+    "602": {
+      "op": "bytec_3 // \"option3Votes\"",
+      "stack_out": [
+        "option#0",
+        "tmp%11#0",
+        "\"option3Votes\""
+      ]
+    },
+    "603": {
+      "op": "swap",
+      "stack_out": [
+        "option#0",
+        "\"option3Votes\"",
+        "tmp%11#0"
+      ]
+    },
+    "604": {
+      "op": "app_global_put",
+      "stack_out": [
+        "option#0"
+      ]
+    },
+    "605": {
+      "op": "b vote_switch_case_next@11"
+    },
+    "608": {
+      "block": "vote_switch_case_1@7",
+      "stack_in": [
+        "option#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "option#0",
+        "0"
+      ]
+    },
+    "609": {
+      "op": "bytec_2 // \"option2Votes\"",
+      "defined_out": [
+        "\"option2Votes\"",
+        "0"
+      ],
+      "stack_out": [
+        "option#0",
+        "0",
+        "\"option2Votes\""
+      ]
+    },
+    "610": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%5#0",
+        "maybe_value%5#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "maybe_value%5#0",
+        "maybe_exists%5#0"
+      ]
+    },
+    "611": {
+      "error": "check self.option2Votes exists",
+      "op": "assert // check self.option2Votes exists",
+      "stack_out": [
+        "option#0",
+        "maybe_value%5#0"
+      ]
+    },
+    "612": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "maybe_value%5#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "maybe_value%5#0",
+        "1"
+      ]
+    },
+    "613": {
+      "op": "+",
+      "defined_out": [
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "tmp%10#0"
+      ]
+    },
+    "614": {
+      "op": "bytec_2 // \"option2Votes\"",
+      "stack_out": [
+        "option#0",
+        "tmp%10#0",
+        "\"option2Votes\""
+      ]
+    },
+    "615": {
+      "op": "swap",
+      "stack_out": [
+        "option#0",
+        "\"option2Votes\"",
+        "tmp%10#0"
+      ]
+    },
+    "616": {
+      "op": "app_global_put",
+      "stack_out": [
+        "option#0"
+      ]
+    },
+    "617": {
+      "op": "b vote_switch_case_next@11"
+    },
+    "620": {
+      "block": "vote_switch_case_0@6",
+      "stack_in": [
+        "option#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "option#0",
+        "0"
+      ]
+    },
+    "621": {
+      "op": "bytec_1 // \"option1Votes\"",
+      "defined_out": [
+        "\"option1Votes\"",
+        "0"
+      ],
+      "stack_out": [
+        "option#0",
+        "0",
+        "\"option1Votes\""
+      ]
+    },
+    "622": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%4#0",
+        "maybe_value%4#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "maybe_value%4#0",
+        "maybe_exists%4#0"
+      ]
+    },
+    "623": {
+      "error": "check self.option1Votes exists",
+      "op": "assert // check self.option1Votes exists",
+      "stack_out": [
+        "option#0",
+        "maybe_value%4#0"
+      ]
+    },
+    "624": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "maybe_value%4#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "maybe_value%4#0",
+        "1"
+      ]
+    },
+    "625": {
+      "op": "+",
+      "defined_out": [
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "tmp%9#0"
+      ]
+    },
+    "626": {
+      "op": "bytec_1 // \"option1Votes\"",
+      "stack_out": [
+        "option#0",
+        "tmp%9#0",
+        "\"option1Votes\""
+      ]
+    },
+    "627": {
+      "op": "swap",
+      "stack_out": [
+        "option#0",
+        "\"option1Votes\"",
+        "tmp%9#0"
+      ]
+    },
+    "628": {
+      "op": "app_global_put",
+      "stack_out": [
+        "option#0"
+      ]
+    },
+    "629": {
+      "op": "b vote_switch_case_next@11"
+    },
+    "632": {
+      "block": "vote_bool_false@4",
+      "stack_in": [
+        "option#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "and_result%0#0"
+      ],
+      "stack_out": [
+        "option#0",
+        "and_result%0#0"
+      ]
+    },
+    "633": {
+      "op": "b vote_bool_merge@5"
+    }
+  }
+}
